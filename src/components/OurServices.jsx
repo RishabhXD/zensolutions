@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCode, FaRobot, FaPalette, FaPen, FaCheck } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const OurServices = () => {
   const services = [
@@ -9,7 +10,7 @@ const OurServices = () => {
         "We create stunning websites using the latest technologies and best practices.",
       icon: <FaCode fontSize={24} />,
       backgroundColor: "#ffcc66",
-      learnMoreLink: "#",
+      learnMoreLink: "/services/web-development",
     },
     {
       title: "Automation",
@@ -17,7 +18,7 @@ const OurServices = () => {
         "We automate repetitive tasks and streamline processes to improve efficiency.",
       icon: <FaRobot fontSize={24} />,
       backgroundColor: "#66ccff",
-      learnMoreLink: "#",
+      learnMoreLink: "/services/automation",
     },
     {
       title: "UI/UX Design",
@@ -25,7 +26,7 @@ const OurServices = () => {
         "We design intuitive and visually appealing user interfaces for seamless user experiences.",
       icon: <FaPalette fontSize={24} />,
       backgroundColor: "#ff6699",
-      learnMoreLink: "#",
+      learnMoreLink: "/services/ui-ux-design",
     },
     {
       title: "Content Writing",
@@ -33,7 +34,7 @@ const OurServices = () => {
         "We craft engaging and persuasive content to captivate your target audience.",
       icon: <FaPen fontSize={24} />,
       backgroundColor: "#99cc66",
-      learnMoreLink: "#",
+      learnMoreLink: "/services/content-writing",
     },
     {
       title: "Quality Assurance",
@@ -41,7 +42,7 @@ const OurServices = () => {
         "We ensure the highest level of quality and performance through rigorous testing and analysis.",
       icon: <FaCheck fontSize={24} />,
       backgroundColor: "#6666ff",
-      learnMoreLink: "#",
+      learnMoreLink: "/services/quality-assurance",
     },
   ];
 
@@ -71,12 +72,12 @@ const OurServices = () => {
               <p className="text-gray-600 text-center mb-6">
                 {service.description}
               </p>
-              <a
-                href={service.learnMoreLink}
+              <Link
+                to={service.learnMoreLink}
                 className="text-primary font-semibold hover:text-primary-light hover:underline"
               >
                 Learn More
-              </a>
+              </Link>
             </div>
           ))}
         </div>
