@@ -1,12 +1,12 @@
 import React from "react";
 import AboutHero from "../components/AboutHero";
 
-const Contact = () => {
+const UiUx = () => {
   return (
     <div>
-      <AboutHero text={"Contact Us"} />
+      <AboutHero text={"UI/UX Design"} />
     </div>
   );
 };
 
-export default Contact;
+export default UiUx;

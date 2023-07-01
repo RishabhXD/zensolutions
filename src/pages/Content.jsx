@@ -1,12 +1,12 @@
 import React from "react";
 import AboutHero from "../components/AboutHero";
 
-const Contact = () => {
+const Content = () => {
   return (
     <div>
-      <AboutHero text={"Contact Us"} />
+      <AboutHero text={"Content Writing"} />
     </div>
   );
 };
 
-export default Contact;
+export default Content;

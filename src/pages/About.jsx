@@ -6,7 +6,7 @@ import Tabs from "../components/Tabs";
 const About = () => {
   return (
     <div>
-      <AboutHero />
+      <AboutHero text={"About Us"} />
       <AboutSection />
       <Tabs />
     </div>
