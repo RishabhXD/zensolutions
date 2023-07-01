@@ -68,6 +68,8 @@ const Values = () => {
         <h2 className="text-3xl font-semibold text-center mb-8 text-gray-800">
           Our Core Values
         </h2>
+        <hr className="w-20 mx-auto border-t-2 border-purple-500 mb-8" />
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8">
           {coreValues.map((value, index) => (
             <div
