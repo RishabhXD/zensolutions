@@ -12,10 +12,7 @@ const Footer = () => {
             <div className="text-2xl font-bold mb-4 text-purple-600">
               <img src="./assets/logo.png" alt="logo" className="w-24" />
             </div>
-            <p>
-              Transforming businesses with innovative IT solutions and
-              consultancy.
-            </p>
+            <p>Transforming businesses</p>
           </div>
 
           {/* Section 2: Our Services */}
@@ -111,26 +108,30 @@ const Footer = () => {
             <div className="flex mt-4">
               <a href="https://www.facebook.com">
                 <FaFacebook
-                  className="text-gray-600 hover:text-purple-600 transition-colors text-2xl md:text-base mr-4"
+                  className="text-gray-600 hover:text-purple-600 transition-colors mr-4"
                   style={{ transition: "transform 0.3s" }}
+                  fontSize={24}
                 />
               </a>
               <a href="https://www.twitter.com">
                 <FaTwitter
-                  className="text-gray-600 hover:text-purple-600 transition-colors text-2xl md:text-base mr-4"
+                  className="text-gray-600 hover:text-purple-600 transition-colors  mr-4"
                   style={{ transition: "transform 0.3s" }}
+                  fontSize={24}
                 />
               </a>
               <a href="https://www.instagram.com">
                 <FaInstagram
-                  className="text-gray-600 hover:text-purple-600 transition-colors text-2xl md:text-base mr-4"
+                  className="text-gray-600 hover:text-purple-600 transition-colors  mr-4"
                   style={{ transition: "transform 0.3s" }}
+                  fontSize={24}
                 />
               </a>
               <a href="https://www.linkedin.com">
                 <FaLinkedin
-                  className="text-gray-600 hover:text-purple-600 transition-colors text-2xl md:text-base"
+                  className="text-gray-600 hover:text-purple-600 transition-colors "
                   style={{ transition: "transform 0.3s" }}
+                  fontSize={24}
                 />
               </a>
             </div>

@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`shadow-sm fixed w-full transition-all duration-300 ${
+      className={`shadow-sm fixed w-full top-0 transition-all duration-300 ${
         isSticky ? "bg-white shadow-xl z-50" : ""
       }`}
     >
