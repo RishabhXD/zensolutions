@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <section className="bg-white py-16 container px-36">
+    <section className="bg-white py-16 container lg:px-36 sm:px-12 md:px-12">
       <div className="mx-auto px-4 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 md:pr-16">
           <h3 className="text-lg text-gray-500 mb-2">About Us</h3>
@@ -21,7 +21,7 @@ const AboutSection = () => {
             aliquet at. Sed consectetur dolor a arcu tincidunt mattis.
           </p>
         </div>
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 sm:w-full ">
           <img
             src="./assets/about.png"
             alt="About Us"

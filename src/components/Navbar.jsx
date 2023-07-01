@@ -4,6 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,6 +28,19 @@ const Navbar = () => {
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+  const handleMenuLinkClick = () => {
+    closeMenu();
+  };
+
+  const handleDropdownLinkClick = () => {
+    closeMenu();
+    toggleDropdown();
   };
 
   return (
@@ -79,6 +93,7 @@ const Navbar = () => {
                           className={({ isActive }) =>
                             isActive ? `${activeLink}` : `${inactiveLink}`
                           }
+                          onClick={handleMenuLinkClick}
                         >
                           <span className="relative text-cyan-800">Home</span>
                         </NavLink>
@@ -89,6 +104,7 @@ const Navbar = () => {
                           className={({ isActive }) =>
                             isActive ? `${activeLink}` : `${inactiveLink}`
                           }
+                          onClick={handleMenuLinkClick}
                         >
                           <span className="relative group-hover:text-cyan-800">
                             About Us
@@ -114,6 +130,7 @@ const Navbar = () => {
                               <NavLink
                                 to="/services/web-development"
                                 className="block py-2 px-4 text-gray-700 hover:text-cyan-800"
+                                onClick={handleDropdownLinkClick}
                               >
                                 Web Development
                               </NavLink>
@@ -122,6 +139,7 @@ const Navbar = () => {
                               <NavLink
                                 to="/services/automation"
                                 className="block py-2 px-4 text-gray-700 hover:text-cyan-800"
+                                onClick={handleDropdownLinkClick}
                               >
                                 Automation
                               </NavLink>
@@ -130,6 +148,7 @@ const Navbar = () => {
                               <NavLink
                                 to="/services/ui-ux-design"
                                 className="block py-2 px-4 text-gray-700 hover:text-cyan-800"
+                                onClick={handleDropdownLinkClick}
                               >
                                 UI/UX Design
                               </NavLink>
@@ -138,6 +157,7 @@ const Navbar = () => {
                               <NavLink
                                 to="/services/content-writing"
                                 className="block py-2 px-4 text-gray-700 hover:text-cyan-800"
+                                onClick={handleDropdownLinkClick}
                               >
                                 Content Writing
                               </NavLink>
@@ -146,6 +166,7 @@ const Navbar = () => {
                               <NavLink
                                 to="/services/quality-assurance"
                                 className="block py-2 px-4 text-gray-700 hover:text-cyan-800"
+                                onClick={handleDropdownLinkClick}
                               >
                                 Quality Assurance
                               </NavLink>
@@ -159,6 +180,7 @@ const Navbar = () => {
                           className={({ isActive }) =>
                             isActive ? `${activeLink}` : `${inactiveLink}`
                           }
+                          onClick={handleMenuLinkClick}
                         >
                           <span className="relative group-hover:text-cyan-800">
                             Contact

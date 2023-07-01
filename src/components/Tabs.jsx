@@ -21,7 +21,7 @@ const Tabs = () => {
           Our Values
         </TabButton>
       </div>
-      <div className="mt-4">
+      <div className="mt-4 px-12">
         {activeTab === 1 && (
           <TabContent>
             <h2 className="text-lg font-semibold mb-2">Our Mission</h2>
