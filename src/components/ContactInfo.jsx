@@ -20,7 +20,7 @@ const ContactInfo = () => {
         </div>
         <div className="ml-3">
           <h4 className="text-lg font-medium text-green-500">Email:</h4>
-          <span className="text-lg">zensolutions@gmail.com</span>
+          <span className="text-lg">zensolutions.help@gmail.com</span>
         </div>
       </div>
       {/* <div className="flex items-center">
